@@ -1,6 +1,6 @@
-package com.sparta.room.post.repository;
+package room.post.repository;
 
-import com.sparta.room.post.entity.Post;
+import room.post.entity.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PostRepository extends JpaRepository<Post,Long> {

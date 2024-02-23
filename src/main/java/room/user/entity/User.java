@@ -1,4 +1,4 @@
-package com.sparta.room.user.entity;
+package room.user.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
