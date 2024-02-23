@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import java.time.LocalDateTime;
 import lombok.Getter;
 
 @Entity
@@ -19,4 +20,8 @@ public class Post {
     private String title;
     @Column(nullable = false)
     private String content;
+    @Column(nullable = false)
+    private LocalDateTime createdAt;
+    @Column
+    private LocalDateTime modifiedAt;
 }

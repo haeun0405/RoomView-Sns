@@ -6,6 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import java.time.LocalDateTime;
 import lombok.Getter;
 @Entity
 @Getter
@@ -14,14 +15,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name="email" ,nullable = false)
+    @Column(nullable = false)
     private String email;
-    @Column(name="username" ,nullable = false)
+    @Column(nullable = false)
     private String username;
-    @Column(name="password")
+    @Column(nullable = false)
     private String password;
-    @Column(name="introduce")
+    @Column
     private String introduce;
-
-
+    @Column(nullable = false)
+    private LocalDateTime createAt;
 }
